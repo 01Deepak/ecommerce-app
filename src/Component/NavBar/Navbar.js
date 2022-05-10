@@ -3,9 +3,9 @@ import { Nav, Header, Container, IconDiv } from '../../Style/NavbarStylel'
 import { ReactComponent as FacebookIcon } from '../../Images/icons/facebook-f-brands.svg'
 import { ReactComponent as TwitterIcon } from '../../Images/icons/twitter-brands.svg'
 import { ReactComponent as LinkedInIcon } from '../../Images/icons/linkedin-in-brands.svg'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
-const Navbar = ({ setOpenLogin, setOpenSignUp, userName, setUserName, role}) => {
+const Navbar = ({ setOpenLogin, setOpenSignUp, userName, setUserName, role, setIsCart}) => {
 
   return (
     <Container>
@@ -68,6 +68,7 @@ const Navbar = ({ setOpenLogin, setOpenSignUp, userName, setUserName, role}) => 
               :
               <span onClick={() => setOpenLogin(true)}>LogIn</span>
           }
+          <span> <Link to="/viewcart"> Cart </Link></span>
         </div>
       </Nav>
     </Container>

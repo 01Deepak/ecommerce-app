@@ -26,10 +26,7 @@ const LogIn = ({ setOpenLogin, setOpenSignUp, userData, setUserName, userName ,s
     validation()
     if (emailValidation(formData.email, emailRegex) && passwordValidation(formData.password)) {
       // find user object
-      console.log("formData.email--", formData.email)
       const userForCheck = userData.find(user => user.email === formData.email && user.password === formData.password)
-      console.log("userForCheck--",userForCheck)
-      // console.log("userForCheck.email--", userForCheck?.email)
       if (userForCheck && formData.email === userForCheck.email && formData.password === userForCheck.password) {
         setUserName(userForCheck.name)
         setRole(userForCheck.role)

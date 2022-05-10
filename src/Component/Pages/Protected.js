@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Protected = ({Component,  userName, setOpenLogin}) => {
-  
   const navigate = useNavigate()
 
   useEffect(() => {

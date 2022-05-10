@@ -69,7 +69,6 @@ const SignUp = ({ setOpenSignUp ,userData , setUserData}) => {
         errorObj.confirmPassword = "Password and confirm password should be match."
       }
     }
-    
 
     setErrorMessage({
       errorName: errorObj.name,

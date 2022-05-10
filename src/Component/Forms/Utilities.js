@@ -15,4 +15,3 @@ export const confirmPassword = (text,password) => {
 }
 
 
-

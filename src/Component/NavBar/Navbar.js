@@ -68,7 +68,7 @@ const Navbar = ({ setOpenLogin, setOpenSignUp, userName, setUserName, role, setI
               :
               <span onClick={() => setOpenLogin(true)}>LogIn</span>
           }
-          <span> <Link to="/viewcart"> Cart </Link></span>
+           <span><Link to="/viewcart"> Cart </Link></span>
         </div>
       </Nav>
     </Container>

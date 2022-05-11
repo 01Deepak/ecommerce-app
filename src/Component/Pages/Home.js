@@ -43,16 +43,18 @@ const Home = ({ setOpenLogin, userName }) => {
   }, [])
 
   if (!products || !products.length) {
+    return(
     <div>
-      <p>no data</p>
+      <p>Loading...</p>
     </div>
+    )
   }
 
   return (
     <CardParent className='flex'>
       {
         products.map((item) => (
-          <ProductCard
+          <ProductCard key={item.id}
             item={item}
             addToCart={addToCart}
             productInCart={productInCart}

@@ -7,4 +7,5 @@ export const Wrapper = styled.div`
   background: lightgray;
   min-width: 25%;
   text-align: center;
+  z-index: -1;
 `

@@ -22,7 +22,8 @@ const ProductInCart = ({ item, remove, itemsInCart, changeItemQuantity }) => {
     if (quantity > 1) {
       setQuantity(quantity - 1)
     } else {
-      alert("quantity must be at least 1.")
+      //alert("quantity must be at least 1.")
+      remove(item.id)
     }
   }
 
